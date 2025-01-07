@@ -35,13 +35,12 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav mx-auto pe-3 fw-normal">
                         <li class="nav-item"><a href="#" class="nav-link text-secondary">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-secondary">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-secondary">Menu</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-secondary">Events</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-secondary">Chefs</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-secondary">Contact</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link text-secondary">About</a></li>
+                        <li class="nav-item"><a href="#menu" class="nav-link text-secondary">Menu</a></li>
+                        <li class="nav-item"><a href="#Events" class="nav-link text-secondary">Events</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link text-secondary">Contact</a></li>
                     </ul>
-                    <button type="button" class="btn btn-danger rounded-5 ms-3 ">Book aTable</button>
+                    <a href="#book" class="btn btn-danger rounded-5 ms-3 ">Book aTable</a>
                 </div>
 
             </nav>
@@ -76,7 +75,7 @@
     <!-- start a learn part -->
 
     <!-- Start of learn part -->
-    <div class="learn container py-5">
+    <div class="learn container py-5" id="about">
         <h3 class="text-center">Learn More <span class="text-danger">About Us</span></h3>
         <div class="row g-4 justify-content-center">
             <!-- Image Column -->
@@ -202,7 +201,7 @@
 
     <!-- Start of menu -->
 
-    <div class="menu container mt-3 ">
+    <div class="menu container mt-3 " id="menu">
         <h3>Check Our <span class="text-danger py-5">Yummy Menu</span></h3>
         <br>
         <!-- Nav pills -->
@@ -370,9 +369,242 @@
 
     <!-- ENd of menu -->
 
-    <!-- Start a Book  -->
+    <!-- Start a facilites  -->
 
-    <!-- End a Book  -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" id="Events">
+
+        <div class="carousel-indicators ">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner pt-5 mt-5" id="text">
+            <div class="carousel-item active">
+                <h2 class="text-center">Birthday <span class="text-danger">parties</span></h2>
+                <p class="text-center text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus,
+                    doloremque!
+                </p>
+                <img src="/img/birthdayparties.jpg" class=" img-fluid d-block mx-auto ">
+            </div>
+            <div class="carousel-item">
+                <h2 class="text-center">Weeding <span class="text-danger">parties</span></h2>
+                <p class="text-center text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus,
+                    doloremque!
+                </p>
+                <img src="img/wedding parties.jpg" class=" img-fluid d-block mx-auto">
+            </div>
+            <div class="carousel-item">
+                <h2 class="text-center">Pravite <span class="text-danger">parties</span></h2>
+                <p class="text-center text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus,
+                    doloremque!
+                </p>
+                <img src="img/pravite parties.jpg" class="img-fluid d-block mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+                <h2 class="text-center">Casual <span class="text-danger">parties</span></h2>
+                <p class="text-center text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus,
+                    doloremque!
+                </p>
+                <img src="img/birthdayparties.jpg" class="img-fluid d-block mx-auto" alt="...">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- End a facilites  -->
+
+    <!--Start Book Table -->
+    <div class="book" id="book">
+        <h1>Book Your <span class="text-danger"> Stay With Us</span></h1>
+        <div class="container mt-5 ">
+            <div class="row">
+                <div class="col-md-6">
+                    <img alt="A table set with a bowl of granola, a cup, a glass, and a bowl of peaches in the background"
+                        class="img-fluid" height="400"
+                        src="https://storage.googleapis.com/a1aa/image/Xr1dce2mXI0xa69CWx0C71hGwqZweM6u93oVHxcIShGKZsCUA.jpg"
+                        width="600" />
+                </div>
+                <div class="col-md-6 p-5">
+                    <div class="booking-form p-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="form-control" placeholder="Your Name" type="text" />
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" placeholder="Your Email" type="email" required />
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <input class="form-control" placeholder="Your Phone" type="text" required />
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" placeholder="# of people" type="text" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="form-control" placeholder="mm/dd/yyyy" type="text" required />
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" placeholder="--:-- --" type="text" required />
+                            </div>
+                        </div>
+
+                        <textarea class="form-control" placeholder="Message" rows="4"></textarea>
+                        <button class="btn btn-block mt-3" type="submit">
+                            Book a Table
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Book Table -->
+
+    <!-- Start a conatact  -->
+
+    <div class="conatact" id="contact">
+
+        <h1>Need Help? <span class="text-danger">Contact Us</span></h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233901.53140470205!2d72.36186460063476!3d23.650503383540247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c422caf789ef5%3A0x170bbc90b8be8bdc!2sMehsana%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1736250918383!5m2!1sen!2sin"
+            width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="mx-auto d-block"></iframe>
+
+
+        <div class="container mt-5 pt-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info d-flex align-items-center">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-info d-flex align-items-center">
+                        <i class="bi bi-telephone-fill"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+1 5589 55488 55</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-info d-flex align-items-center">
+                        <i class="bi bi-envelope-open-fill"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@example.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-info d-flex align-items-center">
+                        <i class="bi bi-clock-fill"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Mon-Sat: 11AM - 23PM; <strong>Sunday:</strong> Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form mt-4">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENd a conatact  -->
+
+    <!-- Start a footer  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <i class="fas fa-map-marker-alt" style="color: #f82249;"></i>
+                    <h4>Address</h4>
+                    <p>
+                        A108 Adam Street<br>
+                        New York, NY 535022
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <i class="fas fa-phone" style="color: #f82249;"></i>
+                    <h4>Contact</h4>
+                    <p>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <i class="fas fa-clock" style="color: #f82249;"></i>
+                    <h4>Opening Hours</h4>
+                    <p>
+                        <strong>Mon-Sat:</strong> 11AM - 23PM<br>
+                        <strong>Sunday:</strong> Closed
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 copyright">
+                    <p>&copy; Copyright <strong>Yummy</strong> All Rights Reserved</p>
+                    <p>Designed by <span style="color: #f82249;">Jaybhavsar</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End a footer  -->
+
+
 
     <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
