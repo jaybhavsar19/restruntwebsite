@@ -1,0 +1,113 @@
+body{
+margin: 0%;
+border: 0;
+padding: 0%;
+}
+ 
+.header{
+width: 100%;
+padding: 3%;
+position: relative;
+z-index: 1;
+top: 0;
+position: fixed;
+
+}
+.header a{
+    font-weight: 700;
+}
+
+    
+
+
+/* End of header */
+
+/* STart of hero */
+
+.hero{
+  
+    padding: 5%;
+    margin-top: 5%;
+    z-index: -1;
+    background-color: hwb(0 92% 8%);
+}
+
+.hero .c h1{
+    font-family: "Amatic SC", serif;
+    font-weight: 700;
+    font-size: 70px;
+    font-style: normal;
+  
+}
+.hero .c p{
+    font-size: 20px;
+}
+.hero img {
+    animation: upDown 3s ease-in-out infinite;
+}
+
+
+@keyframes upDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+/* End of hero */
+
+
+/* Start of learn */
+.learn{
+   padding-top: 2%;
+}
+.learn h3{
+    font-family: "Amatic SC", serif;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: normal;
+    text-align: center;
+}
+/* end of learn */
+
+
+/* start of choos */
+
+.choos{
+    padding-top: 2%;
+    background-color: hwb(0 92% 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.i{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/food\ dish.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* End of choos */
+/* Start of menu */
+
+.menu h3{
+    font-family: "Amatic SC", serif;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: normal;
+    text-align: center;
+}
+
+.menu .c h1{
+    font-family: "Amatic SC", serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: red;
+    font-style: normal;
+    text-align: center
+}
+/* End of menu */
+
+
+
