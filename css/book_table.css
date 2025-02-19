@@ -1,0 +1,23 @@
+.chnage{
+    transform: 0.4;
+}
+.chnage:hover{
+    background: green;
+    color: aliceblue;
+}
+
+/* button conform */
+.conform{
+    width: 100%;
+    background-color:#DC3545;
+    transition: 0.4s;
+}
+.conform a{
+    font-size: 25px;
+    color: azure;
+    text-decoration: none;
+}
+.conform:hover{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}

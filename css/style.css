@@ -7,11 +7,8 @@ padding: 0%;
 .header{
 width: 100%;
 padding: 3%;
-position: relative;
 z-index: 1;
 top: 0;
-position: fixed;
-
 }
 .header a{
     font-weight: 700;
@@ -25,9 +22,6 @@ position: fixed;
 /* STart of hero */
 
 .hero{
-  
-    padding: 5%;
-    margin-top: 5%;
     z-index: -1;
     background-color: hwb(0 92% 8%);
 }
@@ -242,4 +236,8 @@ position: fixed;
 }
 
 /* End a footer */
+
+
+
+
 

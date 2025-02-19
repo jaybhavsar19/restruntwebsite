@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Restaurant Name</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .header {
+            background-color: red;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 5px solid #fff;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .contact-form {
+            margin-top: 30px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .contact-form:hover {
+            transform: scale(1.02);
+        }
+
+        .map {
+            margin-top: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icons a {
+            margin-right: 15px;
+            color: red;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: darkred;
+            transform: scale(1.2);
+        }
+
+        .btn-danger {
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-danger:hover {
+            background-color: darkred;
+            transform: scale(1.05);
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <!-- Start of head section -->
+    <div
+        class="header container-fluid d-felx justify-content-between navbar-expand-md bg-white  p-3 px-5 align-content-center shadow p-3  bg-body-tertiary rounded">
+
+        <div class="row col-lg-12 col-md-12 col-sm-12 d-flex justify-content-between ">
+
+            <nav class="navbar navbar-expand-lg navbar-light p-3 ">
+
+
+                <a class="navbar-brand" href="/home.html" style="font-weight: 600; font-size: 30px;">Yummy<span
+                        class="text-danger">.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto pe-3 fw-normal">
+                        <li class="nav-item"><a href="/home.html" class="nav-link text-secondary">Home</a></li>
+                        <li class="nav-item"><a href="/about_us.html" class="nav-link text-secondary">About</a></li>
+                        <li class="nav-item"><a href="/menu.html" class="nav-link text-secondary">Menu</a></li>
+                        <li class="nav-item"><a href="/events.html" class="nav-link text-secondary">Events</a></li>
+                        <li class="nav-item"><a href="/contact.html" class="nav-link text-secondary">Contact</a></li>
+                    </ul>
+                    <a href="/book_table.html" class="btn btn-danger rounded-5 ms-3 ">Book aTable</a>
+                    <a href="/cart.html" class="btn btn-danger rounded-5 ms-3 ">Cart</a>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- ENd of header section -->
+
+    <div class="header">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you!</p>
+    </div>
+
+    <div class="container contact-form">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Get in Touch</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Contact Information</h2>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> info@restaurantname.com</p>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="bi bi-facebook"></a>
+                    <a href="#" class="bi bi-instagram"></a>
+                    <a href="#" class="bi bi-twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="mt-4 text-center">Our Location</h2>
+        <div class="map mb-5">
+            <iframe class="mx-auto d-block embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233901.53140470205!2d72.36186460063476!3d23.650503383540247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c422caf789ef5%3A0x170bbc90b8be8bdc!2sMehsana%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1736250918383!5m2!1sen!2sin"
+                width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Start a footer -->
+    <div class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <i class="fas fa-map-marker-alt" style="color: #f82249;"></i>
+                    <h4>Address</h4>
+                    <p>
+                        A108 Adam Street<br>
+                        New York, NY 535022
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <i class="fas fa-phone" style="color: #f82249;"></i>
+                    <h4>Contact</h4>
+                    <p>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <i class="fas fa-clock" style="color: #f82249;"></i>
+                    <h4>Opening Hours</h4>
+                    <p>
+                        <strong>Mon-Sat:</strong> 11AM - 23PM<br>
+                        <strong>Sunday:</strong> Closed
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 copyright">
+                    <p>&copy; Copyright <strong>Yummy</strong> All Rights Reserved</p>
+                    <p>Designed by <span style="color: #f82249;">Jaybhavsar</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end a footer -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

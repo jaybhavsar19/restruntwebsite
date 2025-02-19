@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-image: url('https://source.unsplash.com/1600x900/?business,team');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 0, 0, 0.9);
+            z-index: 1;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            z-index: 2;
+            position: relative;
+            animation: slideIn 1s forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #ff0000;
+            margin-top: 20px;
+            border-bottom: 2px solid #ff0000;
+            padding-bottom: 10px;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .values {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .values li {
+            background-color: #ffcccc;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .values li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-card {
+            transition: transform 0.3s;
+        }
+
+        .team-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #ff0000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .team-section {
+            background-color: #ffffff;
+            padding: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start a nav -->
+    <div
+        class="header container-fluid d-felx justify-content-between navbar-expand-md bg-white  p-3 px-5 align-content-center shadow  bg-body-tertiary rounded">
+
+        <div class="row col-lg-12 col-md-12 col-sm-12 d-flex justify-content-between ">
+
+            <nav class="navbar navbar-expand-lg navbar-light p-3 ">
+
+
+                <a class="navbar-brand" href="/home.html" style="font-weight: 600; font-size: 30px;">Yummy<span
+                        class="text-danger">.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto pe-3 fw-normal">
+                        <li class="nav-item"><a href="#" class="nav-link text-secondary">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link text-secondary">About</a></li>
+                        <li class="nav-item"><a href="/menu.html" class="nav-link text-secondary">Menu</a></li>
+                        <li class="nav-item"><a href="#Events" class="nav-link text-secondary">Events</a></li>
+                        <li class="nav-item"><a href="/contact.html" class="nav-link text-secondary">Contact</a></li>
+                    </ul>
+                    <a href="/book_table.html" class="btn btn-danger rounded-5 ms-3 ">Book aTable</a>
+                    <a href="/cart.html" class="btn btn-danger rounded-5 ms-3 ">Cart</a>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- End a nav -->
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Welcome to Yummy Restaurant</h2>
+                <p>At Yummy Restaurant, we believe in the power of passion, innovation, and community. Our mission is
+                    to and we strive to make a positive impact in everything
+                    we do.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Our Story</h2>
+                <p>Founded in 2001, Yummy Restaurant started as a small describe initial concept or product.
+                    With
+                    a vision to, we have grown into a
+                    trusted brand, etc.]. Our journey has been fueled by the support of our amazing customers and a
+                    dedicated team that shares a common goal: to deliver excellence.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Our Values</h2>
+                <ul class="values">
+                    <li><strong>Integrity:</strong> We believe in doing the right thing, always.</li>
+                    <li><strong>Innovation:</strong> We embrace change and encourage creativity.</li>
+                    <li><strong>Community:</strong> We are committed to giving back and supporting our local community.
+                    </li>
+                    <li><strong>Customer Focus:</strong> Our customers are at the heart of everything we do.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row team-section">
+            <div class="col-md-12">
+                <h2>Meet Our Team</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card team-card mb-4">
+                            <img src="/img/1person.jpg" class="card-img-top" alt="Team Member 1">
+                            <div class="card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">CEO & Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card team-card mb-4">
+                            <img src="/img/2person.jpg" class="card-img-top" alt="Team Member 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Jane Smith</h5>
+                                <p class="card-text">Chief Operating Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card team-card mb-4">
+                            <img src="/img/3person.jpg" class="card-img-top" alt="Team Member 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Emily Johnson</h5>
+                                <p class="card-text">Marketing Director</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Our diverse team of professionals is dedicated to bringing you the best experience possible.
+                    Together, we work hard to ensure that [Your Company Name] remains a leader in [your industry].</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start a footer -->
+    <div class="footer bg-dark text-white mt-4">
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <i class="fas fa-map-marker-alt" style="color: #f82249;"></i>
+                    <h4>Address</h4>
+                    <p>
+                        A108 Adam Street<br>
+                        New York, NY 535022
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <i class="fas fa-phone" style="color: #f82249;"></i>
+                    <h4>Contact</h4>
+                    <p>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <i class="fas fa-clock" style="color: #f82249;"></i>
+                    <h4>Opening Hours</h4>
+                    <p>
+                        <strong>Mon-Sat:</strong> 11AM - 23PM<br>
+                        <strong>Sunday:</strong> Closed
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 copyright">
+                    <p>&copy; Copyright <strong>Yummy</strong> All Rights Reserved</p>
+                    <p>Designed by <span style="color: #f82249;">Jaybhavsar</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end a footer -->
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
